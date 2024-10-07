@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="hola.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+
+        <!--    NAV SECTION   -->
+
+        <div class="header__container">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="#sobremi">Sobre Mi</a></li>
+                    <li class="header__item"><a class="header__link" href="#proyectos">Portfolio</a></li>
+                    <li class="header__item"><a class="header__link" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header__logocontainer">
+                <a class="header__logo" href="#video"><img class="header__logo" src="logo.png" alt="logo"></a>
+            </div>
+        </div>
+
+        <!--    VIDEO SECTION   -->
+
+        <div class="header__video-container" id="video">
+            <section class="header__video-section">
+                <h1 class="header__video-content header--video--titulo">Servicio de programacion</h1>
+                <p class="header__video-content header--video--text">Nos dedicamos a crear sitios web atractivos, funcionales y optimizados para brindar la mejor experiencia a tus usuarios. Nuestro enfoque se basa en entender las necesidades de tu negocio para diseñar soluciones que no solo capturan la esencia de tu marca, sino que también son fáciles de navegar y están listas para destacar en los motores de búsqueda.</p>
+                <a class="header__video-content" class="header--video--button" href="#ubicacion">
+                    <button class="header__video-content header--video--button" >⭣ UBICACION ⭣</button>
+                </a>
+            </section>
+
+            <video class="header__video" autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta <video>.
+            </video>
+        </div>      
+    </header>
+
+    <!--    SOBRE-MI SECTION   -->
+
+    <section class="sobremi__encabezado" id="sobremi">
+        <h2 class="sobremi__encabezado-titulo"> ♜ ⸻ ⸻ ⸻ <span class="sobremi__encabezado-titulo-destacado">CONOCIMIENTOS</span> ⸻ ⸻ ⸻ ♜</h2>
+    </section>
+
+    <main class="sobremi">
+        <div class="sobremi__izquierda">
+            <h2 class="sobremi__apellido">
+                <span class="sobremi__apellido">B</span>
+                <span class="sobremi__apellido">R</span>
+                <span class="sobremi__apellido">Y</span>
+                <span class="sobremi__apellido">A</span>
+                <span class="sobremi__apellido">N</span>
+                <span class="sobremi__apellido">↳</span>
+            </h2>
+        </div>
+        <div class="sobremi__centro">
+            <p class="sobremi__texto">Soy un apasionado programador en constante búsqueda de nuevos desafíos. Estudio en la universidad, donde profundizo mis conocimientos en desarrollo de software y tecnologías emergentes. Con un enfoque decidido y un espíritu aventurero, no me detengo ante nada para superar los obstáculos y alcanzar mis metas. Como programador, domino una variedad de lenguajes y tecnologías, desde HTML y CSS hasta JavaScript y Python. Me especializo en el desarrollo web, creando aplicaciones intuitivas y funcionales. Mi capacidad para resolver problemas y aprender rápidamente me permite enfrentar cualquier reto con confianza y creatividad.</p>
+            <img src="divinecode.jpg" alt="divinecode" class="sobremi__imagen">
+        </div>
+        <div class="sobremi__derecha">
+            <h2 class="sobremi__apellido">
+                <span class="sobremi__apellido">P</span>
+                <span class="sobremi__apellido">A</span>
+                <span class="sobremi__apellido">G</span>
+                <span class="sobremi__apellido">E</span>
+                <span class="sobremi__apellido">↲</span>
+                <span class="sobremi__apellido">↲</span>
+            </h2>
+        </div>
+    </main>
+
+    <!--    CONTACTO SECTION   -->
+
+    <section class="contacto" id="contacto">
+        <h2 class="contacto__titulo"> ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘  | <span class="contacto__destacado">CONTACTANOS</span> | ⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘</h2>
+        <div class="contacto__container">
+            <div class="contacto__form__container">
+                <div class="contacto__informacion">
+                    <p class="contacto__informacion-texto">Si deseas ponerte en contacto, por favor completa el formulario a continuacion:</p>
+                </div>
+                <div class="contacto__form">
+                    <form action="tu-script-de-envio.php" method="POST" class="contacto__form-content">
+                        <div class="contacto__form-grupo">
+                            <label for="name" class="contacto__form-label">Nombre:</label>
+                            <input type="text" id="name" name="name" required class="contacto__form-input">
+                        </div>
+                        <div class="contacto__form-grupo">
+                            <label for="email" class="contacto__form-label">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required class="contacto__form-input">
+                        </div>
+                        <div class="contacto__form-grupo">
+                            <label for="message" class="contacto__form-label">Mensaje:</label>
+                            <textarea id="message" name="message" required class="contacto__form-textarea"></textarea>
+                        </div>
+                        <button type="submit" class="contacto__form-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="redessociales">
+                <div class="redessociales__contenedor">
+                    <p class="redessociales__texto">Siguenos en nuestras redes:</p>
+                </div>
+                <div class="redessociales__contenedor">
+                    <p class="redessociales__texto">➞ Sociales:</p>
+                    <a class="redessociales__subtexto" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                    <a class="redessociales__subtexto" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                </div>
+                <div class="redessociales__contenedor">
+                    <p class="redessociales__texto">➞ Correo electronico:</p>
+                    <a class="redessociales__subtexto" href="https://www.gmail.com/"><i class="fa-regular fa-envelope"></i> bryanworkpage@gmail.com</a>
+                </div>
+                <div class="redessociales__contenedor">
+                    <p class="redessociales__texto">➞ WhatsApp:</p>
+                    <a class="redessociales__subtexto" href="https://www.whatsapp.com/"><i class="fa-solid fa-message"></i> +56 91234567</a>
+                </div>
+                <div class="redessociales__contenedor">
+                    <p class="redessociales__texto">➞ Curriculum:</p>
+                    <a class="redessociales__subtexto" href="Curriculum.docx" download="Curriculum.docx"><i class="fa-solid fa-file"></i> Descargar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--    MAPA SECTION   -->
+        
+    <section class="mapa" id="ubicacion">
+        <h2 class="mapa__titulo">╭══• - NEW YORK - •══╮</h2>
+        </div>
+        <div class="google__maps-container">
+            <div class="google__maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528001093!2d-74.14448735108942!3d40.697631233315505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scl!4v1727478592826!5m2!1ses-419!2scl" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--    PROYECTOS SECTION   -->
+
+    <section class="proyectos" id="proyectos">
+        <h2 class="proyectos__titulo">╔═══════════════╗
+            PROYECTOS╔═══════════════╗
+╚═══════════════╝</h2>
+        <div class="proyectos__galeria">
+            <div class="proyecto">
+                <h3 class="proyecto__nombre">- Instagram -</h3>
+                <img src="Instagram.jpg" alt="Proyecto 1" class="proyecto__imagen">
+                <div class="proyecto__info">
+                    <a href="https://www.instagram.com/" class="proyecto__enlace">Ver más</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <h3 class="proyecto__nombre">- Youtube -</h3>
+                <img src="Youtube.jpg" alt="Proyecto 1" class="proyecto__imagen">
+                <div class="proyecto__info">
+                    <a href="https://www.youtube.com/" class="proyecto__enlace">Ver más</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <h3 class="proyecto__nombre">- Facebook -</h3>
+                <img src="Facebook.jpg" alt="Proyecto 1" class="proyecto__imagen">
+                <div class="proyecto__info">
+                    <a href="https://web.facebook.com/" class="proyecto__enlace">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    TESTIMONIOS SECTION   -->
+
+    <section class="testimonios">
+        <h2 class="testimonios__titulo">╔═══════════════╗ TESTIMONIOS
+            ╔═══════════════╗
+    ╚═══════════════╝</h2>
+        <div class="testimonios__contenedor">
+            <div class="testimonios__tarjeta">
+                <h3 class="testimonios__titulotarjeta">- Arnold -</h3>
+                <img class="testimonios__imagen" src="terminator.jpg" alt="">
+                <p class="testimonios__texto">Trabajo perfecto</p>
+            </div>
+            <div class="testimonios__tarjeta">
+                <h3 class="testimonios__titulotarjeta">- Sylvester -</h3>
+                <img class="testimonios__imagen" src="cobra.jpg" alt="">
+                <p class="testimonios__texto">Programador genial</p>
+            </div>
+            <div class="testimonios__tarjeta">
+                <h3 class="testimonios__titulotarjeta">- Chuck Norris -</h3>
+                <img class="testimonios__imagen" src="norris.jfif" alt="">
+                <p class="testimonios__texto">Excelente trabajo</p>
+            </div>
+        </div>
+    </section>
+
+    <!--    PROYECTOS FOOTER   -->
+
+    <footer class="footer">
+        <h2 class="footer__texto">──────────────────────────────────────────────────────────────────────────────────────────────</h2>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__list-titulo"><a href="" class="footer__list-titulo">Enlaces</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 1</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 2</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 3</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 4</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 5</a></li>
+            </ul>
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__list-titulo"><a href="" class="footer__list-titulo">Enlaces</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 1</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 2</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 3</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 4</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 5</a></li>
+            </ul>
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__list-titulo"><a href="" class="footer__list-titulo">Enlaces</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 1</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 2</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 3</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 4</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 5</a></li>
+            </ul>
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__list-titulo"><a href="" class="footer__list-titulo">Enlaces</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 1</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 2</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 3</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 4</a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link">Enlace 5</a></li>
+            </ul>
+        </div>
+        <h4 class="footer__texto">────────────────────────────────────────────<span class="footer__textodestacado">PIE DE PAGINA</span>───────────────────────────────────────────</h4>
+        <h3 class="footer__textodestacado">©2024 Bryan Martiz | Portafolio | Todos los derechos reservados.</h3>
+    </footer>
+</body>
+</html>

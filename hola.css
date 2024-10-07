@@ -1,0 +1,478 @@
+/*   PAGE SECTION   */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*   NAV SECTION   */
+
+.header__container {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding: 22px;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+}
+
+.header__item {
+    list-style: none;
+    display: inline-block;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #edf0f1;
+    margin: 0px 7px;
+    font-family: 'Noto Serif JP';
+}
+
+.header__logocontainer{
+    width: 30vh;
+    height: 100vh;
+}
+
+.header__logo {
+    object-fit: cover;
+    overflow: hidden;
+    width: 150px;
+    height: 25px;
+}
+
+/*   VIDEO SECTION   */
+
+.header__video-container {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.header__video-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    top: 48%;
+    left: 50%;
+}
+
+.header__video-content {
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.header--video--titulo {
+    text-decoration: line-through;
+}
+
+.header--video--button {
+    background-color: black;
+    color: white;
+}
+
+.header__video {
+    width: 100%;
+    height: 86vh;
+    object-fit: cover;
+    filter: grayscale(100%) invert(92%) contrast(93%);
+}
+
+/*   MAP SECTION   */
+
+.mapa {
+    background-color: black;
+}
+
+.mapa__titulo{
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    font-family: 'Noto Serif JP';
+    font-size: 30px;
+}
+
+.google__maps {
+    overflow: hidden;
+    filter: grayscale(100%) invert(92%) contrast(93%);
+}
+
+/*   SOBREMI SECTION   */
+
+.sobremi__encabezado {
+    width: 100%;
+    height: 12vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi__encabezado-titulo {
+    color: white;
+    font-family: 'Noto Serif JP';
+    font-size: 50px;
+}
+
+.sobremi__encabezado-titulo-destacado {
+    font-family: 'Noto Serif JP';
+    font-size: 40px;
+}
+
+.sobremi {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.sobremi__zquierda {
+    width: 15%;
+    height: 80vh;
+}
+
+.sobremi__apellido {
+    color: #5433FA;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Serif JP';
+    width: 10vh;
+    margin: 0px 20px;
+}
+
+.sobremi__centro {
+    margin: 40px;
+}
+
+.sobremi__titulo {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Noto Serif JP';
+}
+
+.sobremi__texto{
+    color: white;
+    font-family: 'Bebas Nueu';
+    margin-bottom: 10px;
+}
+
+.sobremi__imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    max-height: 530px;
+    object-fit: cover;
+}
+
+/*   CONTACTO SECTION   */
+
+.contacto {
+    background-color: black;
+    width: 100%;
+    height: 77vh;
+}
+
+.contacto__titulo {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Noto Serif JP';
+    font-size: 30px;
+}
+
+.contacto__destacado {
+    color: #32FA7D;
+    font-family: 'Noto Serif JP';
+}
+
+.contacto__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redessociales {
+    width: 50%;
+    padding: 3px;
+    border-left: 2px solid white;
+    margin-top: 20px;
+}
+
+.fa-brands {
+    flex-direction: column;
+}
+
+.redessociales__texto {
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.redessociales__contenedor {
+    padding-bottom: 20px;
+}
+
+.fa-instagram {
+    color: yellow;
+    margin-right: 5px;
+}
+.fa-facebook {
+    color: blue;
+    margin-right: 5px;
+}
+.fa-envelope {
+    color: orange;
+}
+.fa-message {
+    color: green;
+}
+.fa-file{
+    color: blue;
+}
+
+.redessociales__subtexto {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.contacto__form__container {
+    width: 50%;
+    padding: 20px;
+}
+
+.contacto__informacion-texto {
+    font-size: 16px;
+    line-height: 1.5; 
+    color: white; 
+    margin-bottom: 20px; 
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.contacto__form-grupo {
+    margin-bottom: 15px; 
+}
+
+.contacto__form-label {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    display: block; 
+    color: white;
+}
+
+.contacto__form-input, .contacto__form-textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 14px; 
+    margin-top: 10px;
+}
+
+.contacto__form-textarea {
+    resize: none; 
+    overflow: hidden; 
+}
+
+.contacto__form-button {
+    padding: 10px 15px; 
+    background-color: white; 
+    color: black; 
+    border: none; 
+    border-radius: 4px;
+    font-size: 16px; 
+    cursor: pointer; 
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*  PROYECTOS SECTION   */
+
+.proyectos {
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+    text-align: center;
+}
+
+.proyectos__titulo {
+    color: #FFFC72;
+    font-family: 'Noto Serif JP';
+    font-size:32px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.proyectos__galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.proyecto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 300px;
+    margin-top: 20px;
+    border: 2px double whitesmoke;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+}
+
+.proyecto__imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyecto__info {
+    padding: 15px;
+}
+
+.proyecto__nombre {
+    font-size: 1.2em;
+    margin-bottom: 3px;
+    color: #333;
+    font-family: 'Noto Serif JP';
+}
+
+.proyecto__enlace {
+    display: inline-block;
+    padding: 10px 30%;
+    background-color: black; 
+    color: white;
+    border-radius: 5px; 
+    text-decoration: none;
+    transition: background-color 0.3s; 
+    font-family: 'Noto Serif JP';
+}
+
+.proyecto__enlace:hover {
+    background-color: red;
+}
+
+/*  TESTIMONIOS SECTION   */
+
+.testimonios{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.testimonios__titulo {
+    color: #FFFC72;
+    font-family: 'Noto Serif JP';
+    font-size:31px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.testimonios__contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonios__tarjeta {
+    width: 22%;
+    height: 70vh;
+}
+
+
+.testimonios__titulotarjeta{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #3B4EFF;
+    font-family: 'Noto Serif JP';
+}
+
+.testimonios__imagen{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.testimonios__texto {
+    color: #32FA7D;
+    font-family: 'Noto Serif JP';
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/*  FOOTER SECTION   */
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.footer__list-titulo {
+    color: #47E9FA;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 13px;
+}
+
+.footer__list-link, .footer__list-item{
+    margin-bottom: 5px;
+}
+
+.footer__texto{
+    text-align: center;
+    color: white;
+    font-family: 'Noto Serif JP';
+    font-size: 14px;
+}
+
+.footer__textodestacado{
+    color: #5a0735;
+    font-family: 'Noto Serif JP';
+}
+
+
+.footer__list-link{
+    color: pink;
+}
